@@ -4,12 +4,19 @@
 
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/nav_home.css') }}" />
 {% endblock head %}
 
 {% block content %}
 <div class="container">
-  {% include 'nav_home.html' %}
+  <div class="text">
+    <img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1706127157/leek12gaus/ccms11m8utmgg2bmyqkt/LCSS_CircleTextMarkBlack_SM.png"
+      width="200px">
+    <h1>Welcome to Class!</h1>
+    <p>Please select your class on the right</p>
+  </div>
+  <div class="nav">
+    {% include 'nav_home.html' %}
+  </div>
 </div>
 
 {% endblock content %}
